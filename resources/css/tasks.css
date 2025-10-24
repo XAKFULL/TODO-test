@@ -1,0 +1,30 @@
+/* Просто пример базовых стилей */
+.task-card {
+    cursor: grab;
+    transition: transform 0.2s;
+}
+.task-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Прозрачный чёрный фон для оверлея модалки */
+.kanban-modal-overlay {
+    background-color: #00000080 !important;
+    /* Альтернатива: #00000080 — hex с альфа-каналом */
+}
+
+.task-card:hover {
+    background-color: #f9fafb;
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+#tag-suggestions div:hover {
+    background-color: #f3f4f6;
+}
+
+#selected-tags span {
+    display: inline-flex;
+    align-items: center;
+}

@@ -1,0 +1,1 @@
+.task-card{cursor:grab;transition:transform .2s}.task-card:hover{transform:translateY(-2px)}.kanban-modal-overlay{background-color:#00000080!important}.task-card:hover{background-color:#f9fafb;border-color:#cbd5e1;transform:translateY(-1px);transition:all .2s ease}#tag-suggestions div:hover{background-color:#f3f4f6}#selected-tags span{display:inline-flex;align-items:center}
