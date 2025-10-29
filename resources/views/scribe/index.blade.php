@@ -122,7 +122,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: October 24, 2025</li>
+        <li>Last updated: October 29, 2025</li>
     </ul>
 </div>
 
@@ -191,7 +191,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -199,51 +199,45 @@ access-control-allow-origin: *
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;fhjgsdf&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T18:44:48.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T18:44:48.000000Z&quot;
+            &quot;name&quot;: &quot;bd&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T20:52:08.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T20:52:08.000000Z&quot;
         },
         {
             &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;новая&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:02:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T19:02:46.000000Z&quot;
+            &quot;name&quot;: &quot;ddd&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T21:38:08.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T21:38:08.000000Z&quot;
         },
         {
             &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;сложна&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:02:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T19:02:46.000000Z&quot;
+            &quot;name&quot;: &quot;git&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T21:40:10.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T21:40:10.000000Z&quot;
         },
         {
             &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;сложная&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:04:51.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T19:04:51.000000Z&quot;
+            &quot;name&quot;: &quot;api&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T21:40:30.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T21:40:30.000000Z&quot;
         },
         {
             &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;сложнаяяяяяя&quot;,
-            &quot;created_at&quot;: &quot;2025-10-24T09:47:49.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-24T09:47:49.000000Z&quot;
+            &quot;name&quot;: &quot;аааа&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T21:43:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T21:43:49.000000Z&quot;
         },
         {
             &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;123&quot;,
-            &quot;created_at&quot;: &quot;2025-10-24T09:47:49.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-24T09:47:49.000000Z&quot;
+            &quot;name&quot;: &quot;labudapi&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T22:02:00.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T22:02:00.000000Z&quot;
         },
         {
             &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;сложнаяяяяяяasdsadsa&quot;,
-            &quot;created_at&quot;: &quot;2025-10-24T09:49:33.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-24T09:49:33.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;name&quot;: &quot;321&quot;,
-            &quot;created_at&quot;: &quot;2025-10-24T09:52:28.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-24T09:52:28.000000Z&quot;
+            &quot;name&quot;: &quot;strh&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T22:40:10.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T22:40:10.000000Z&quot;
         }
     ]
 }</code>
@@ -445,7 +439,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="b"
                data-component="body">
     <br>
-<p>Количество символов в поле value должно быть не меньше 2. Количество символов в поле value не может превышать 50. Example: <code>b</code></p>
+<p>Must be at least 2 characters. Must not be greater than 50 characters. Example: <code>b</code></p>
         </div>
         </form>
 
@@ -495,16 +489,16 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;fhjgsdf&quot;,
-        &quot;created_at&quot;: &quot;2025-10-23T18:44:48.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-10-23T18:44:48.000000Z&quot;
+        &quot;name&quot;: &quot;bd&quot;,
+        &quot;created_at&quot;: &quot;2025-10-29T20:52:08.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-10-29T20:52:08.000000Z&quot;
     }
 }</code>
  </pre>
@@ -733,7 +727,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="b"
                data-component="body">
     <br>
-<p>Количество символов в поле value должно быть не меньше 2. Количество символов в поле value не может превышать 50. Example: <code>b</code></p>
+<p>Must be at least 2 characters. Must not be greater than 50 characters. Example: <code>b</code></p>
         </div>
         </form>
 
@@ -914,121 +908,40 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: 1,
-            &quot;title&quot;: &quot;a&quot;,
-            &quot;description&quot;: &quot;ad&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T18:44:48.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T18:44:48.000000Z&quot;,
-            &quot;status_code&quot;: &quot;completed&quot;,
-            &quot;status&quot;: &quot;Завершено&quot;
-        },
-        {
             &quot;id&quot;: 2,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T18:45:06.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T18:45:06.000000Z&quot;,
-            &quot;status_code&quot;: &quot;completed&quot;,
-            &quot;status&quot;: &quot;Завершено&quot;
+            &quot;title&quot;: &quot;2222&quot;,
+            &quot;description&quot;: &quot;2dsafdsfs&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T15:10:20.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T22:31:49.000000Z&quot;,
+            &quot;status&quot;: &quot;in_progress&quot;,
+            &quot;status_label&quot;: &quot;В процессе&quot;
         },
         {
             &quot;id&quot;: 3,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:02:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-24T09:15:37.000000Z&quot;,
-            &quot;status_code&quot;: &quot;in_progress&quot;,
-            &quot;status&quot;: &quot;В процессе&quot;
+            &quot;title&quot;: &quot;1111&quot;,
+            &quot;description&quot;: &quot;2adsfsafd&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T15:10:27.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T21:40:39.000000Z&quot;,
+            &quot;status&quot;: &quot;completed&quot;,
+            &quot;status_label&quot;: &quot;Завершено&quot;
         },
         {
             &quot;id&quot;: 4,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:04:01.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T21:29:38.000000Z&quot;,
-            &quot;status_code&quot;: &quot;in_progress&quot;,
-            &quot;status&quot;: &quot;В процессе&quot;
+            &quot;title&quot;: &quot;ААААА3&quot;,
+            &quot;description&quot;: &quot;АААА2&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T21:43:49.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T22:35:38.000000Z&quot;,
+            &quot;status&quot;: &quot;pending&quot;,
+            &quot;status_label&quot;: &quot;В ожидании&quot;
         },
         {
-            &quot;id&quot;: 6,
-            &quot;title&quot;: &quot;в&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:04:04.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T21:29:50.000000Z&quot;,
-            &quot;status_code&quot;: &quot;in_progress&quot;,
-            &quot;status&quot;: &quot;В процессе&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:04:23.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T19:04:23.000000Z&quot;,
-            &quot;status_code&quot;: &quot;pending&quot;,
-            &quot;status&quot;: &quot;В ожидании&quot;
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:04:51.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-24T07:58:32.000000Z&quot;,
-            &quot;status_code&quot;: &quot;in_progress&quot;,
-            &quot;status&quot;: &quot;В процессе&quot;
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:07:49.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T19:07:49.000000Z&quot;,
-            &quot;status_code&quot;: &quot;pending&quot;,
-            &quot;status&quot;: &quot;В ожидании&quot;
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:07:49.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-24T08:19:23.000000Z&quot;,
-            &quot;status_code&quot;: &quot;completed&quot;,
-            &quot;status&quot;: &quot;Завершено&quot;
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:07:50.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-24T08:19:26.000000Z&quot;,
-            &quot;status_code&quot;: &quot;completed&quot;,
-            &quot;status&quot;: &quot;Завершено&quot;
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;title&quot;: &quot;b&quot;,
-            &quot;description&quot;: &quot;Eius et animi quos velit et.&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T19:07:50.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T19:07:50.000000Z&quot;,
-            &quot;status_code&quot;: &quot;pending&quot;,
-            &quot;status&quot;: &quot;В ожидании&quot;
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;title&quot;: &quot;afwe&quot;,
-            &quot;description&quot;: &quot;asf&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T21:34:05.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T21:34:05.000000Z&quot;,
-            &quot;status_code&quot;: &quot;pending&quot;,
-            &quot;status&quot;: &quot;В ожидании&quot;
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;title&quot;: &quot;addas&quot;,
-            &quot;description&quot;: &quot;dsadsa&quot;,
-            &quot;created_at&quot;: &quot;2025-10-23T21:34:14.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-10-23T21:34:14.000000Z&quot;,
-            &quot;status_code&quot;: &quot;pending&quot;,
-            &quot;status&quot;: &quot;В ожидании&quot;
+            &quot;id&quot;: 5,
+            &quot;title&quot;: &quot;1123&quot;,
+            &quot;description&quot;: &quot;укеуке234234&quot;,
+            &quot;created_at&quot;: &quot;2025-10-29T22:35:47.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-10-29T22:41:31.000000Z&quot;,
+            &quot;status&quot;: &quot;pending&quot;,
+            &quot;status_label&quot;: &quot;В ожидании&quot;
         }
     ]
 }</code>
@@ -1124,9 +1037,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"title\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
-    \"status\": \"pending\",
+    \"status\": \"architecto\",
     \"tags\": [
-        \"v\"
+        \"n\"
     ]
 }"
 </code></pre></div>
@@ -1145,9 +1058,9 @@ const headers = {
 let body = {
     "title": "b",
     "description": "Eius et animi quos velit et.",
-    "status": "pending",
+    "status": "architecto",
     "tags": [
-        "v"
+        "n"
     ]
 };
 
@@ -1240,7 +1153,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="b"
                data-component="body">
     <br>
-<p>Количество символов в поле value не может превышать 255. Example: <code>b</code></p>
+<p>Must not be greater than 255 characters. Example: <code>b</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -1259,10 +1172,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-tasks"
-               value="pending"
+               value="architecto"
                data-component="body">
     <br>
-<p>Example: <code>pending</code></p>
+<p>Example: <code>architecto</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>in_progress</code></li> <li><code>completed</code></li></ul>
         </div>
@@ -1277,7 +1190,7 @@ Must be one of:
                name="tags[1]"                data-endpoint="POSTapi-tasks"
                data-component="body">
     <br>
-<p>Количество символов в поле value не может превышать 50.</p>
+<p>Must not be greater than 50 characters.</p>
         </div>
         </form>
 
@@ -1294,14 +1207,14 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/tasks/1" \
+    --get "http://localhost/api/tasks/2" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/tasks/1"
+    "http://localhost/api/tasks/2"
 );
 
 const headers = {
@@ -1327,22 +1240,21 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
-        &quot;id&quot;: 1,
-        &quot;title&quot;: &quot;a&quot;,
-        &quot;description&quot;: &quot;ad&quot;,
-        &quot;created_at&quot;: &quot;2025-10-23T18:44:48.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-10-23T18:44:48.000000Z&quot;,
-        &quot;status_code&quot;: &quot;completed&quot;,
-        &quot;status&quot;: &quot;Завершено&quot;,
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;2222&quot;,
+        &quot;description&quot;: &quot;2dsafdsfs&quot;,
+        &quot;created_at&quot;: &quot;2025-10-29T15:10:20.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-10-29T22:31:49.000000Z&quot;,
+        &quot;status&quot;: &quot;in_progress&quot;,
+        &quot;status_label&quot;: &quot;В процессе&quot;,
         &quot;tags&quot;: [
-            &quot;fhjgsdf&quot;,
-            &quot;321&quot;
+            &quot;git&quot;
         ]
     }
 }</code>
@@ -1424,10 +1336,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="GETapi-tasks--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the task. Example: <code>1</code></p>
+<p>The ID of the task. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -1444,15 +1356,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/tasks/1" \
+    "http://localhost/api/tasks/2" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"title\": \"b\",
     \"description\": \"Eius et animi quos velit et.\",
-    \"status\": \"in_progress\",
+    \"status\": \"architecto\",
     \"tags\": [
-        \"v\"
+        \"n\"
     ]
 }"
 </code></pre></div>
@@ -1460,7 +1372,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/tasks/1"
+    "http://localhost/api/tasks/2"
 );
 
 const headers = {
@@ -1471,9 +1383,9 @@ const headers = {
 let body = {
     "title": "b",
     "description": "Eius et animi quos velit et.",
-    "status": "in_progress",
+    "status": "architecto",
     "tags": [
-        "v"
+        "n"
     ]
 };
 
@@ -1567,10 +1479,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="PUTapi-tasks--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the task. Example: <code>1</code></p>
+<p>The ID of the task. Example: <code>2</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1582,7 +1494,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="b"
                data-component="body">
     <br>
-<p>Количество символов в поле value не может превышать 255. Example: <code>b</code></p>
+<p>Must not be greater than 255 characters. Example: <code>b</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -1601,10 +1513,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="PUTapi-tasks--id-"
-               value="in_progress"
+               value="architecto"
                data-component="body">
     <br>
-<p>Example: <code>in_progress</code></p>
+<p>Example: <code>architecto</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>pending</code></li> <li><code>in_progress</code></li> <li><code>completed</code></li></ul>
         </div>
@@ -1619,7 +1531,7 @@ Must be one of:
                name="tags[1]"                data-endpoint="PUTapi-tasks--id-"
                data-component="body">
     <br>
-<p>Количество символов в поле value не может превышать 50.</p>
+<p>Must not be greater than 50 characters.</p>
         </div>
         </form>
 
@@ -1636,14 +1548,14 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/tasks/1" \
+    "http://localhost/api/tasks/2" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/tasks/1"
+    "http://localhost/api/tasks/2"
 );
 
 const headers = {
@@ -1736,10 +1648,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-tasks--id-"
-               value="1"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the task. Example: <code>1</code></p>
+<p>The ID of the task. Example: <code>2</code></p>
             </div>
                     </form>
 
@@ -1756,9 +1668,23 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/tasks-paginated?search=%22important+task%22&amp;status=architecto&amp;tags[]=urgent&amp;tags[]=important&amp;sort=architecto&amp;direction=architecto&amp;per_page=16&amp;page=16&amp;with_tags=" \
+    "http://localhost/api/tasks-paginated" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"search\": \"\\\"important task\\\"\",
+    \"status\": \"architecto\",
+    \"tags\": [
+        \"urgent\",
+        \"important\"
+    ],
+    \"sort\": \"architecto\",
+    \"direction\": \"architecto\",
+    \"per_page\": 16,
+    \"page\": 16,
+    \"with_tags\": false
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -1766,28 +1692,29 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://localhost/api/tasks-paginated"
 );
 
-const params = {
-    "search": ""important task"",
-    "status": "architecto",
-    "tags[0]": "urgent",
-    "tags[1]": "important",
-    "sort": "architecto",
-    "direction": "architecto",
-    "per_page": "16",
-    "page": "16",
-    "with_tags": "0",
-};
-Object.keys(params)
-    .forEach(key =&gt; url.searchParams.append(key, params[key]));
-
 const headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
+let body = {
+    "search": "\"important task\"",
+    "status": "architecto",
+    "tags": [
+        "urgent",
+        "important"
+    ],
+    "sort": "architecto",
+    "direction": "architecto",
+    "per_page": 16,
+    "page": 16,
+    "with_tags": false
+};
+
 fetch(url, {
     method: "POST",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -1863,108 +1790,108 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>search</code></b>&nbsp;&nbsp;
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>search</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="search"                data-endpoint="POSTapi-tasks-paginated"
                value=""important task""
-               data-component="query">
+               data-component="body">
     <br>
 <p>Search by title or description. Example: <code>"important task"</code></p>
-            </div>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-tasks-paginated"
                value="architecto"
-               data-component="query">
+               data-component="body">
     <br>
 <p>Filter by status. Options: pending, in_progress, completed Example: <code>architecto</code></p>
-            </div>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>tags</code></b>&nbsp;&nbsp;
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>tags</code></b>&nbsp;&nbsp;
 <small>string[]</small>&nbsp;
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="tags[0]"                data-endpoint="POSTapi-tasks-paginated"
-               data-component="query">
+               data-component="body">
         <input type="text" style="display: none"
                name="tags[1]"                data-endpoint="POSTapi-tasks-paginated"
-               data-component="query">
+               data-component="body">
     <br>
 <p>Filter by tags (array).</p>
-            </div>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="sort"                data-endpoint="POSTapi-tasks-paginated"
                value="architecto"
-               data-component="query">
+               data-component="body">
     <br>
 <p>Sort field. Default: created_at. Options: title, status, created_at, updated_at Example: <code>architecto</code></p>
-            </div>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>direction</code></b>&nbsp;&nbsp;
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>direction</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="direction"                data-endpoint="POSTapi-tasks-paginated"
                value="architecto"
-               data-component="query">
+               data-component="body">
     <br>
 <p>Sort direction. Default: desc. Options: asc, desc Example: <code>architecto</code></p>
-            </div>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>per_page</code></b>&nbsp;&nbsp;
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>per_page</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="per_page"                data-endpoint="POSTapi-tasks-paginated"
                value="16"
-               data-component="query">
+               data-component="body">
     <br>
 <p>Number of items per page. Default: 15. Range: 1-100 Example: <code>16</code></p>
-            </div>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>page</code></b>&nbsp;&nbsp;
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>page</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="page"                data-endpoint="POSTapi-tasks-paginated"
                value="16"
-               data-component="query">
+               data-component="body">
     <br>
 <p>Current page. Default: 1 Example: <code>16</code></p>
-            </div>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>with_tags</code></b>&nbsp;&nbsp;
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>with_tags</code></b>&nbsp;&nbsp;
 <small>boolean</small>&nbsp;
 <i>optional</i> &nbsp;
                 <label data-endpoint="POSTapi-tasks-paginated" style="display: none">
             <input type="radio" name="with_tags"
-                   value="1"
+                   value="true"
                    data-endpoint="POSTapi-tasks-paginated"
-                   data-component="query"             >
+                   data-component="body"             >
             <code>true</code>
         </label>
         <label data-endpoint="POSTapi-tasks-paginated" style="display: none">
             <input type="radio" name="with_tags"
-                   value="0"
+                   value="false"
                    data-endpoint="POSTapi-tasks-paginated"
-                   data-component="query"             >
+                   data-component="body"             >
             <code>false</code>
         </label>
     <br>
 <p>append tags. Default: false Example: <code>false</code></p>
-            </div>
-                </form>
+        </div>
+        </form>
 
             
 
