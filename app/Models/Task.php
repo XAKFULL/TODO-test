@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\TaskStatusEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -17,7 +18,7 @@ class Task extends Model
     ];
 
     protected $casts = [
-        'status' => 'string',
+        'status' => TaskStatusEnum::class,
     ];
 
     public function tags(): BelongsToMany

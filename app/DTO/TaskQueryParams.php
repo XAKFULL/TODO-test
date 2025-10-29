@@ -2,13 +2,14 @@
 
 namespace App\DTO;
 
+use App\Enums\TaskStatusEnum;
 use Illuminate\Http\Request;
 
 readonly class TaskQueryParams
 {
     public function __construct(
         public ?string $search = null,
-        public ?string $status = null,
+        public ?TaskStatusEnum $status = null,
         public ?array $tags = null,
         public string $sort = 'created_at',
         public string $direction = 'desc',
@@ -21,7 +22,7 @@ readonly class TaskQueryParams
     {
         return new self(
             search: $request->input('search'),
-            status: $request->input('status'),
+            status: TaskStatusEnum::tryFrom($request->input('status')),
             tags: is_array($request->input('tags')) ? $request->input('tags') : null,
             sort: $request->input('sort', 'created_at'),
             direction: $request->input('direction', 'desc'),

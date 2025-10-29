@@ -24,14 +24,14 @@ class TaskController extends Controller
     /**
      * Get all tasks with pagination, filtering and sorting
      *
-     * @queryParam search string Search by title or description. Example: "important task"
-     * @queryParam status string Filter by status. Options: pending, in_progress, completed
-     * @queryParam tags array Filter by tags (array). Example: ["urgent", "important"]
-     * @queryParam sort string Sort field. Default: created_at. Options: title, status, created_at, updated_at
-     * @queryParam direction string Sort direction. Default: desc. Options: asc, desc
-     * @queryParam per_page integer Number of items per page. Default: 15. Range: 1-100
-     * @queryParam page integer Current page. Default: 1
-     * @queryParam with_tags bool append tags. Default: false
+     * @bodyParam search string Search by title or description. Example: "important task"
+     * @bodyParam status string Filter by status. Options: pending, in_progress, completed
+     * @bodyParam tags array Filter by tags (array). Example: ["urgent", "important"]
+     * @bodyParam sort string Sort field. Default: created_at. Options: title, status, created_at, updated_at
+     * @bodyParam direction string Sort direction. Default: desc. Options: asc, desc
+     * @bodyParam per_page integer Number of items per page. Default: 15. Range: 1-100
+     * @bodyParam page integer Current page. Default: 1
+     * @bodyParam with_tags bool append tags. Default: false
      *
      **/
     public function paginate(Request $request): AnonymousResourceCollection

@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Enums\TaskStatusEnum;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Enum;
 
 class TaskRequest extends FormRequest
 {
@@ -24,7 +26,7 @@ class TaskRequest extends FormRequest
         return [
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'status' => 'nullable|in:pending,in_progress,completed',
+            'status' => ['nullable', 'string', new Enum(TaskStatusEnum::class)],
             'tags' => 'nullable|array',
             'tags.*' => 'string|max:50',
         ];

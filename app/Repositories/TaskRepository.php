@@ -13,24 +13,29 @@ use Illuminate\Support\Collection;
 // TODO можно сделать интерфейс с разделением (запись, чтение, пагинация но избыточно в данном случае)
 class TaskRepository
 {
-    private const CACHE_KEY = 'tasks';
+    private const string CACHE_KEY = 'tasks';
 
-    private const CACHE_TTL = 300;
+    private const string CACHE_VERSION_KEY = 'tasks:version';
+
+    private const int CACHE_TTL = 300;
 
     public function __construct(
         private readonly CacheRepository $cache
     ) {}
 
-    public function index(TaskQueryParams $params)
+    public function index(TaskQueryParams $params): LengthAwarePaginator
     {
         return $this->paginate($params);
     }
 
     public function all(): Collection
     {
-        return $this->cache->remember(self::CACHE_KEY, self::CACHE_TTL, function () {
-            return Task::all();
-        });
+        return $this->cache->remember(
+            self::CACHE_KEY.':'.$this->getCacheVersion(),
+            self::CACHE_TTL,
+            function () {
+                return Task::all();
+            });
     }
 
     public function find(int $id): ?Task
@@ -44,7 +49,7 @@ class TaskRepository
 
         $this->checkTags($task, $data);
 
-        $this->clearCache();
+        $this->incrementCacheVersion();
 
         return $task;
     }
@@ -55,7 +60,7 @@ class TaskRepository
 
         $this->checkTags($task, $data);
 
-        $this->clearCache();
+        $this->incrementCacheVersion();
 
         return $task;
     }
@@ -64,35 +69,41 @@ class TaskRepository
     {
         $result = $task->delete();
 
-        $this->clearCache();
+        $this->incrementCacheVersion();
 
         return $result;
     }
 
-    private function clearCache(): void
+    private function getCacheVersion(): int
     {
-        $this->cache->forget(self::CACHE_KEY);
+        return $this->cache->get(self::CACHE_VERSION_KEY, 0);
+    }
+
+    private function incrementCacheVersion(): void
+    {
+        $this->cache->increment(self::CACHE_VERSION_KEY);
     }
 
     public function paginate(TaskQueryParams $params): LengthAwarePaginator
     {
         $cacheKey = $this->generateCacheKey($params);
 
-        return $this->cache->remember($cacheKey, self::CACHE_TTL, function () use ($params) {
-            $query = (new TaskQuery($params))->apply();
-
-            return $query->paginate(
+        return $this->cache->remember(
+            $cacheKey,
+            self::CACHE_TTL,
+            fn () => (new TaskQuery($params))->apply()->paginate(
                 $params->perPage,
                 ['*'],
                 'page',
                 $params->page
-            );
-        });
+            )
+        );
     }
 
     private function generateCacheKey(TaskQueryParams $params): string
     {
-        return self::CACHE_KEY.':params:'.md5(json_encode($params->toArray()));
+        // Включаем версию кэша в ключ
+        return self::CACHE_KEY.':params:'.$this->getCacheVersion().':'.md5(json_encode($params->toArray()));
     }
 
     private function checkTags(Task $task, array $data): void

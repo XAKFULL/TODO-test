@@ -15,12 +15,15 @@ class TaskWebController extends Controller
     public function kanban(Request $request): View
     {
         $tasks = $this->taskRepository->all();
+        $pageTitle = 'Канбан';
 
-        return view('tasks.index', compact('tasks'));
+        return view('tasks.pages.kanban', compact('tasks', 'pageTitle'));
     }
 
     public function list(): View
     {
-        return view('tasks.list');
+        $pageTitle = 'Список';
+
+        return view('tasks.pages.list', compact('pageTitle'));
     }
 }

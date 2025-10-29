@@ -55,9 +55,9 @@ class TaskQuery
             ? $this->params->sort
             : self::DEFAULT_SORT_FIELD;
 
-        $sortDirection = strtolower($this->params->direction) === 'asc'
-            ? 'asc'
-            : 'desc';
+        $sortDirection = strtolower($this->params->direction) === self::DEFAULT_SORT_DIRECTION
+            ? self::DEFAULT_SORT_DIRECTION
+            : 'asc';
 
         $query->orderBy($sortField, $sortDirection);
     }

@@ -2,9 +2,13 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Task;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * @mixin Task
+ */
 class TaskResource extends JsonResource
 {
     /**
@@ -20,12 +24,8 @@ class TaskResource extends JsonResource
             'description' => $this->description,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'status_code' => $this->status,
-            'status' => match ($this->status) {
-                'pending' => 'В ожидании',
-                'in_progress' => 'В процессе',
-                'completed' => 'Завершено'
-            },
+            'status' => $this->status,
+            'status_label' => $this->status->label(),
             'tags' => $this->whenLoaded('tags', function () {
                 return $this->tags->pluck('name');
             }),

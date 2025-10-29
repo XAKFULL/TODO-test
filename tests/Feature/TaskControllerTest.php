@@ -20,7 +20,7 @@ class TaskControllerTest extends TestCase
         $response->assertStatus(200)
             ->assertJsonStructure([
                 'data' => [
-                    '*' => ['id', 'title', 'description', 'status_code', 'created_at', 'updated_at'],
+                    '*' => ['id', 'title', 'description', 'status', 'created_at', 'updated_at'],
                 ],
             ]);
     }
@@ -36,7 +36,7 @@ class TaskControllerTest extends TestCase
         $response = $this->postJson('/api/tasks', $data);
 
         $response->assertStatus(201)
-            ->assertJsonStructure(['data' => ['id', 'title', 'description', 'status_code', 'created_at', 'updated_at']]);
+            ->assertJsonStructure(['data' => ['id', 'title', 'description', 'status', 'created_at', 'updated_at']]);
 
         $this->assertDatabaseHas('tasks', [
             'title' => 'Test Task',
@@ -82,7 +82,7 @@ class TaskControllerTest extends TestCase
         $response->assertStatus(200)
             ->assertJsonStructure([
                 'data' => [
-                    '*' => ['id', 'title', 'description', 'status_code', 'tags'],
+                    '*' => ['id', 'title', 'description', 'status', 'tags'],
                 ],
                 'meta' => ['current_page', 'last_page', 'per_page', 'total'],
             ])
@@ -144,7 +144,7 @@ class TaskControllerTest extends TestCase
 
         $response->assertStatus(200)
             ->assertJsonCount(1, 'data')
-            ->assertJsonPath('data.0.status_code', 'pending');
+            ->assertJsonPath('data.0.status', 'pending');
     }
 
     public function test_can_create_task_with_tags()
@@ -161,7 +161,7 @@ class TaskControllerTest extends TestCase
         $response->assertStatus(201)
 
             ->assertJsonStructure([
-                'data' => ['id', 'title', 'description', 'status_code', 'tags'],
+                'data' => ['id', 'title', 'description', 'status', 'tags'],
             ])
             ->assertJsonCount(2, 'data.tags');
 
@@ -188,7 +188,7 @@ class TaskControllerTest extends TestCase
 
         $response->assertStatus(200)
             ->assertJsonPath('data.title', 'Updated Task')
-            ->assertJsonPath('data.status_code', 'in_progress')
+            ->assertJsonPath('data.status', 'in_progress')
             ->assertJsonCount(2, 'data.tags');
 
         $this->assertCount(2, $task->fresh()->tags);

@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
+use App\Enums\TaskStatusEnum;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Enum;
 
 class TaskIndexRequest extends FormRequest
 {
@@ -23,7 +25,7 @@ class TaskIndexRequest extends FormRequest
     {
         return [
             'search' => 'nullable|string|min:3',
-            'status' => 'nullable|in:pending,in_progress,completed',
+            'status' => ['nullable', 'string', new Enum(TaskStatusEnum::class)],
             'tags' => 'nullable|array',
             'sort' => 'nullable|in:title,status,created_at,updated_at',
             'direction' => 'nullable|in:asc,desc',
